@@ -45,7 +45,6 @@ class App extends Component {
         i += 4;
     }
     return arr.reverse().join("")
-    // return parseInt(num).toLocaleString("fi-FI") 
   }
 
   calculateSurfaceArea = (radius, percentage) => {
@@ -58,8 +57,8 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <h1 className="appTitle">Let's get some Planets!</h1>
-          <div style={{ marginBottom: 20 }}>
-            <button type="button" className="btn btn-info" onClick={() => this.getPlanets()} >Get Planets</button>
+          <div>
+            <button type="button" className="btn btn-info homeBtn" onClick={() => this.getPlanets()} >Let's Start!</button>
           </div>
           {this.state.results.length > 0 ?
             <table className="table table-hover table-bordered">
