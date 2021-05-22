@@ -69,9 +69,9 @@ class App extends Component {
                   <th scope="col">Residents</th>
                   <th scope="col">Terrains</th>
                   <th scope="col">Population</th>
-                  <th scope="col">Surface Area (km2) Covered in Water</th>
-                  <th scope="col">Radius</th>
-                  <th scope="col">% Covered in Water</th>
+                  <th scope="col">Surface Area Covered in Water (km<sup>2</sup>)</th>
+                  <th scope="col">Radius (km)</th>
+                  <th scope="col">Covered in Water (%)</th>
                 </tr>
               </thead>
               <tbody>
