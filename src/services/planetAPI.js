@@ -1,5 +1,5 @@
 import axios from 'axios';
-const SWAPI_JSON_URL = 'https://swapi.dev/api/planets';
+const SWAPI_JSON_URL = 'https://swapi.dev/api/planets/';
 // const SWAPI_JSON_URL = "http://swapi.dev/api/planets/?page=2"
 // const SWAPI_JSON_URL = "http://swapi.dev/api/planets/?page=3"
 // const SWAPI_JSON_URL = "http://swapi.dev/api/planets/?page=4"
