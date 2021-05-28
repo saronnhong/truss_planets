@@ -8,7 +8,8 @@ let API = {
     getPlanetData: async () => {
         return axios.get(SWAPI_JSON_URL)
             .catch(function (error) {
-                throw error.message
+                // throw error.message    // original
+                throw new Error(error.message);
             });
     }
 }

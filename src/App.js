@@ -18,7 +18,8 @@ class App extends Component {
         this.setState({ ...this.state, results: res.data.results, isLoading: false });
       })
       .catch(err => {
-        this.setState({ ...this.state, statusMessage: err })
+        // this.setState({ ...this.state, statusMessage: err });  //original
+        this.setState({ ...this.state, statusMessage: "Error: " + err.message });
       })
   }
 
@@ -41,8 +42,8 @@ class App extends Component {
     let arr = num.toString().split("").reverse();
     let i = 0;
     while (i < arr.length) {
-        arr.splice(i, 0, " ");
-        i += 4;
+      arr.splice(i, 0, " ");
+      i += 4;
     }
     return arr.reverse().join("")
   }
